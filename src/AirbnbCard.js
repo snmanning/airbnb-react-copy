@@ -9,31 +9,39 @@ class AirbnbCard extends Component {
         };
     }
 
+    voteYay () {
+        this.setState({
+            ratingVote: this.state.ratingVote + 1
+        })
+    }
+
     render () {
         return (
             <div>
-                <section>
-                    <img src='https://via.placeholder.com/300x300' />
+                <section className='AirbnbCard-imageCont'>
+                    <img src='https://via.placeholder.com/300x300' 
+                         className='AirbnbCard-image'/>
                 </section>
-                <section>
+                <section className='AirbnbCard-infoCont'>
                     <span>
                         Activity
                     </span>
                     <span>
                         Where
                     </span>
-                    <h1>
+                    <h1 className='AirbnbCard-activity'>
                         Activity's Specific Name
                     </h1>
-                    <p>
+                    <p className='AirbnbCard-cost'>
                         Trip Cost
                     </p>
-                    <span>
-                        rating
+                    <span className='AirbnbCard-rating'>
+                        {this.state.ratingVote}
                     </span>
-                    <span>
-                        ratingVote
-                    </span>
+                    <button className='AirbnbCard-vote'
+                            onClick={this.voteYay.bind(this)}>
+                        Rate
+                    </button>
                 </section>
             </div>
         );
