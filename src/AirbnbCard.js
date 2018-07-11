@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './AirbnbCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class AirbnbCard extends Component {
     constructor(props) {
@@ -17,30 +18,36 @@ class AirbnbCard extends Component {
 
     render () {
         return (
-            <div>
+            <div className='AirbnbCard-whole'>
                 <section className='AirbnbCard-imageCont'>
                     <img src='https://via.placeholder.com/300x300' 
                          className='AirbnbCard-image'/>
                 </section>
                 <section className='AirbnbCard-infoCont'>
-                    <span>
+                    <p>
                         Activity
-                    </span>
-                    <span>
+                    </p>
+                    <p>
                         Where
-                    </span>
+                    </p>
                     <h1 className='AirbnbCard-activity'>
                         Activity's Specific Name
                     </h1>
                     <p className='AirbnbCard-cost'>
                         Trip Cost
                     </p>
-                    <span className='AirbnbCard-rating'>
+                    <section className='AirbnbCard-stars'>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </section>
+                    <section className='AirbnbCard-rating'>
                         {this.state.ratingVote}
-                    </span>
-                    <button className='AirbnbCard-vote'
+                    </section>
+                    <button className='AirbnbCard-btn'
                             onClick={this.voteYay.bind(this)}>
-                        Rate
+                        <i class="fas fa-thumbs-up"></i>
                     </button>
                 </section>
             </div>

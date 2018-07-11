@@ -1,17 +1,32 @@
-.AirbnbCard-imageCont {
+.AirbnbCard-whole {
+    border: 1px solid black;
+    padding: 1.5%;
+    width: 20%;
+    cursor: pointer;
+    background-color: lightblue;
+}
 
+.AirbnbCard-imageCont {
+    display: flex;
+    flex-direction: column;
 }
 
 .AirbnbCard-image {
-
+    border: 1px solid black;
 }
 
 .AirbnbCard-infoCont {
+    text-align: left;
+    display: inline-block;
 
 }
 
 .AirbnbCard-activity {
 
+}
+
+.AirbnbCard-stars {
+    color: gold;
 }
 
 .AirbnbCard-cost {
@@ -22,6 +37,11 @@
 
 }
 
-.AirbnbCard-vote {
-    
+.AirbnbCard-btn {
+    cursor: pointer;
+    background-color: lemonchiffon;
+    border-radius: 13px;
+    color: mediumorchid;
+    width: 50px;
+    height: 30px;
 }
