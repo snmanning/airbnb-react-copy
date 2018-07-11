@@ -8,6 +8,14 @@ library.add(faStroopwafel)
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      vacationUrls: [
+        
+      ]
+    }
+  }
   render() {
     return (
       <div>

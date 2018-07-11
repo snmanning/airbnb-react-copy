@@ -3,6 +3,9 @@ import './AirbnbCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class AirbnbCard extends Component {
+    static propTypes = {
+        vacationUrls: PropTypes.string.isRequired
+    }
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +23,7 @@ class AirbnbCard extends Component {
         return (
             <div className='AirbnbCard-whole'>
                 <section className='AirbnbCard-imageCont'>
-                    <img src='https://via.placeholder.com/300x300' 
+                    <img src={vacationUrls}
                          className='AirbnbCard-image'/>
                 </section>
                 <section className='AirbnbCard-infoCont'>
