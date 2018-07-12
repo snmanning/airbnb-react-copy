@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import AirbnbCard from './AirbnbCard';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
@@ -24,7 +27,9 @@ class App extends Component {
     const destination = this.state.vacationUrls.map((url) => <AirbnbCard vacationUrls={url} key={url} />)
     return (
       <div className='App-placeCards'>
-        {destination}
+        <Header title='The Best Travel Destinations'/>
+          {destination}
+        <Footer />
       </div>
     );
   }

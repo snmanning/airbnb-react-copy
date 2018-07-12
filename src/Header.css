@@ -1,0 +1,9 @@
+.Header-container {
+    display: flex;
+    width: 100vw;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
