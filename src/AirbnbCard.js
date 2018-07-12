@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './AirbnbCard.css';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class AirbnbCard extends Component {
@@ -20,6 +21,7 @@ class AirbnbCard extends Component {
     }
 
     render () {
+        const {vacationUrls} = this.props;
         return (
             <div className='AirbnbCard-whole'>
                 <section className='AirbnbCard-imageCont'>
@@ -50,7 +52,7 @@ class AirbnbCard extends Component {
                     </section>
                     <button className='AirbnbCard-btn'
                             onClick={this.voteYay.bind(this)}>
-                        <i class="fas fa-thumbs-up"></i>
+                        <i className="fas fa-thumbs-up"></i>
                     </button>
                 </section>
             </div>

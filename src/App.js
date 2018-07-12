@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import AirbnbCard from './AirbnbCard';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import './App.css';
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faStroopwafel)
+// library.add(faStroopwafel)
 
 
 class App extends Component {
@@ -12,14 +13,18 @@ class App extends Component {
     super(props);
     this.state = {
       vacationUrls: [
-        
+        'https://loremflickr.com/300/300/paris',
+        'https://loremflickr.com/300/300/rome',
+        'https://loremflickr.com/300/300/tokyo',
+        'https://loremflickr.com/300/300/london'
       ]
     }
   }
   render() {
+    const destination = this.state.vacationUrls.map((url) => <AirbnbCard vacationUrls={url} key={url} />)
     return (
-      <div>
-        <AirbnbCard/>
+      <div className='App-placeCards'>
+        {destination}
       </div>
     );
   }
