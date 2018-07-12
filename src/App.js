@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AirbnbCard from './AirbnbCard';
 import './App.css';
 import Header from './Header';
+import Layout from './Layout';
 import Footer from './Footer';
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
@@ -28,7 +29,9 @@ class App extends Component {
     return (
       <div className='App-placeCards'>
         <Header title='The Best Travel Destinations'/>
+        <Layout>
           {destination}
+        </Layout>
         <Footer />
       </div>
     );
