@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
-import Layout from './Layout';
+import Main from './Main';
 import Footer from './Footer';
 import AirbnbCardList from './AirbnbCardList';
 
@@ -32,9 +32,9 @@ class App extends Component {
     return (
       <div>
         <Header title='The Best Travel Destinations'/>
-        <Layout>
+        <Main>
           <AirbnbCardList vacationUrls={this.state.vacationUrls} />
-        </Layout>
+        </Main>
         <Footer />
       </div>
     );

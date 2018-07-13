@@ -1,15 +1,16 @@
 import React from 'react';
 import AirbnbCard from './AirbnbCard';
-// import Layout from 'Layout';
+import Main from './Main';
+import Layout from './Layout';
 import PropTypes from 'prop-types';
 
 const AirbnbCardList = (props) => {
-    const destination = this.state.vacationUrls.map((url) => <AirbnbCard vacationUrls={url} key={url} />);
+    const destination = props.vacationUrls.map((url) => <AirbnbCard vacationUrls={url} key={url} />);
         return (
             <div>
-                <Layout>
+                <Main>
                     {destination}
-                </Layout>
+                </Main>
             </div>
         );
 };
