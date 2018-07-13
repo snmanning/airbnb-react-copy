@@ -4,6 +4,7 @@
     width: 20%;
     cursor: pointer;
     background-color: lightblue;
+    margin: 1.5rem 0;
 }
 
 .AirbnbCard-imageCont {
@@ -31,6 +32,11 @@
 
 .AirbnbCard-cost {
 
+}
+
+.AirbnbCard-reactions {
+    display: flex;
+    justify-content: space-around;
 }
 
 .AirbnbCard-rating {

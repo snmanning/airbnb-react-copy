@@ -20,7 +20,11 @@ class App extends Component {
         'https://loremflickr.com/300/300/paris',
         'https://loremflickr.com/300/300/rome',
         'https://loremflickr.com/300/300/tokyo',
-        'https://loremflickr.com/300/300/london'
+        'https://loremflickr.com/300/300/london',
+        'https://loremflickr.com/300/300/beijing',
+        'https://loremflickr.com/300/300/berlin',
+        'https://loremflickr.com/300/300/rockymountains',
+        'https://loremflickr.com/300/300/stonemountain',
       ]
     }
   }

@@ -41,19 +41,21 @@ class AirbnbCard extends Component {
                     <p className='AirbnbCard-cost'>
                         Trip Cost
                     </p>
-                    <section className='AirbnbCard-stars'>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </section>
-                    <section className='AirbnbCard-rating'>
-                        {this.state.ratingVote}
-                    </section>
-                    <button className='AirbnbCard-btn'
-                            onClick={this.voteYay.bind(this)}>
-                        <i className="fas fa-thumbs-up"></i>
-                    </button>
+                    <div className='AirbnbCard-reactions'>
+                        <section className='AirbnbCard-stars'>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </section>
+                        <button className='AirbnbCard-btn'
+                                onClick={this.voteYay.bind(this)}>
+                            <i className="fas fa-thumbs-up"></i>
+                        </button>
+                        <section className='AirbnbCard-rating'>
+                            {this.state.ratingVote}
+                        </section>
+                    </div>
                 </section>
             </div>
         );
