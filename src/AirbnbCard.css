@@ -39,7 +39,7 @@
     justify-content: space-around;
 }
 
-.AirbnbCard-rating {
+.AirbnbCard-stars:on :hover {
 
 }
 
