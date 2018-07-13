@@ -36,6 +36,7 @@
 
 .AirbnbCard-stars {
     color: lightgoldenrodyellow;
+    
 }
 
 .AirbnbCard-cost {
@@ -50,8 +51,9 @@
 
 .AirbnbCard-stars:hover {
     color: gold;
+    background-color: lemonchiffon;
     cursor: pointer;
-    box-shadow: 0 0 1.75rem;
+    box-shadow: 0 0 2rem;
 }
 
 .AirbnbCard-btn {
