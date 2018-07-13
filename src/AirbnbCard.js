@@ -29,10 +29,11 @@ class AirbnbCard extends Component {
                          className='AirbnbCard-image'/>
                 </section>
                 <section className='AirbnbCard-infoCont'>
-                    <p>
+                    <p className='AirbnbCard-snipet'>
                         Activity
                     </p>
-                    <p>
+                    <i class="fas fa-passport AirbnbCard-snipet"></i>
+                    <p className='AirbnbCard-snipet'>
                         Where
                     </p>
                     <h1 className='AirbnbCard-activity'>

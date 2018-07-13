@@ -17,37 +17,64 @@
 }
 
 .AirbnbCard-infoCont {
-    text-align: left;
-    display: inline-block;
+    margin-top: 1rem;
+}
 
+.AirbnbCard-snipet {
+    text-align: left;
+    font-style: italic;
+    display: inline-block;
+    margin-right: 1.25rem;
 }
 
 .AirbnbCard-activity {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Impact, Charcoal, sans-serif;
 
 }
 
 .AirbnbCard-stars {
-    color: gold;
+    color: lightgoldenrodyellow;
 }
 
 .AirbnbCard-cost {
-
+    font-size: .75rem;
 }
 
 .AirbnbCard-reactions {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
 }
 
-.AirbnbCard-stars:on :hover {
-
+.AirbnbCard-stars:hover {
+    color: gold;
+    cursor: pointer;
+    box-shadow: 0 0 1.75rem;
 }
 
 .AirbnbCard-btn {
     cursor: pointer;
+    outline: none;
+    font-size: 1.75rem;
     background-color: lemonchiffon;
     border-radius: 13px;
     color: mediumorchid;
-    width: 50px;
-    height: 30px;
+    width: 4.5rem;
+    height: 3.25rem;
+}
+
+.AirbnbCard-btn:hover {
+    background-color: darkblue;
+    font-size: 2.25rem;
+    width: 5rem;
+    height: 3.75rem;
+    color: white;
+    box-shadow: .5rem .5rem lemonchiffon;
+}
+
+.AirbnbCard-btn:active {
+    transform: translate(.25rem, .25rem);
+    box-shadow: .25rem .25rem lemonchiffon;
 }
