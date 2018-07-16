@@ -32,7 +32,7 @@ class AirbnbCard extends Component {
                     <p className='AirbnbCard-snipet'>
                         Activity
                     </p>
-                    <i class="fas fa-passport AirbnbCard-snipet"></i>
+                    <i className="fas fa-passport AirbnbCard-snipet"></i>
                     <p className='AirbnbCard-snipet'>
                         Where
                     </p>
@@ -44,10 +44,10 @@ class AirbnbCard extends Component {
                     </p>
                     <div className='AirbnbCard-reactions'>
                         <section className='AirbnbCard-stars'>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
                         </section>
                         <button className='AirbnbCard-btn'
                                 onClick={this.voteYay.bind(this)}>

@@ -5,9 +5,9 @@ import './Footer.css';
 
 const Footer = (props) => 
     <footer className='Footer-container'>
-        <i class="fas fa-map-marked-alt"></i>
+        <i className="fas fa-map-marked-alt"></i>
         Thank you for chooing us to pick your perfect destination.
-        <i class="fas fa-plane-departure"></i>
+        <i className="fas fa-plane-departure"></i>
     </footer>
 
 
