@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
 import Main from './Main';
+import Header2 from './Header2';
 import Footer from './Footer';
 import AirbnbCardList from './AirbnbCardList';
 
@@ -34,6 +35,9 @@ class App extends Component {
         <Header title='The Best Travel Destinations'/>
         <Main>
           <AirbnbCardList vacationUrls={this.state.vacationUrls} />
+        </Main>
+        <Main>
+          <Header2 title='Share your Destination Experience'/>
         </Main>
         <Footer />
       </div>
