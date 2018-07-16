@@ -28,9 +28,18 @@ class App extends Component {
         'https://loremflickr.com/300/300/berlin',
         'https://loremflickr.com/300/300/rockymountains',
         'https://loremflickr.com/300/300/stonemountain',
-      ]
+      ];
+
+      shareTrip: []
     }
+  };
+
+  shareTripUrl (url) {
+    this.setState({
+      shareTrip: [...this.state.shareTrip, url]
+    });
   }
+
   render() {
     return (
       <div>
@@ -41,7 +50,7 @@ class App extends Component {
         <Main>
           <Header2 title='Share your Destination Experience'/>
           <Share />
-          <TripCard />
+          <TripCard onAddTripCard={this.shareTripUrl.bind(this)}/>
         </Main>
         <Footer />
       </div>
