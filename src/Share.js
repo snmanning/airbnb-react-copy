@@ -40,8 +40,10 @@ class Share extends Component {
                             onChange={this.handleDestChange.bind(this)} />
                     <input className='Share-photo'
                          input='text'
-                         placeholder='Input image url here'
-                         src={this.handleUrlPath.bind(this)} />
+                         placeholder='Input image url here' 
+                         onChange={this.handleUrlPath.bind(this)}
+                         value={this.state.urlPath}>
+                    </input>
                     <button className='Share-btn'
                             onClick={this.handleUpload.bind(this)} >
                         Share Now!

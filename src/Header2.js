@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Header2 = (props) =>
     <header className='Header2-container' >
         <h2> {props.title} </h2>
-        <i clasNames="far fa-image"></i>
+        <i className="far fa-image"></i>
     </header>
 
 Header2.propTypes = {
