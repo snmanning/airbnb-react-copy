@@ -3,6 +3,8 @@ import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Header2 from './Header2';
+import Share from './Share';
+import TripCard from './TripCard';
 import Footer from './Footer';
 import AirbnbCardList from './AirbnbCardList';
 
@@ -38,6 +40,8 @@ class App extends Component {
         </Main>
         <Main>
           <Header2 title='Share your Destination Experience'/>
+          <Share />
+          <TripCard />
         </Main>
         <Footer />
       </div>
