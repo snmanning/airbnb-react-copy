@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Share.css';
 
 class Share extends Component {
@@ -38,7 +38,9 @@ class Share extends Component {
                             placeholder='Where did you visit?'
                             value={this.state.destination}
                             onChange={this.handleDestChange.bind(this)} />
-                    <img className='Share-photo'
+                    <input className='Share-photo'
+                         input='text'
+                         placeholder='Input image url here'
                          src={this.handleUrlPath.bind(this)} />
                     <button className='Share-btn'
                             onClick={this.handleUpload.bind(this)} >

@@ -4,7 +4,7 @@ import Header from './Header';
 import Main from './Main';
 import Header2 from './Header2';
 import Share from './Share';
-import TripCard from './TripCard';
+// import TripCard from './TripCard';
 import Footer from './Footer';
 import AirbnbCardList from './AirbnbCardList';
 
@@ -28,7 +28,7 @@ class App extends Component {
         'https://loremflickr.com/300/300/berlin',
         'https://loremflickr.com/300/300/rockymountains',
         'https://loremflickr.com/300/300/stonemountain',
-      ];
+      ],
 
       shareTrip: []
     }
@@ -50,7 +50,7 @@ class App extends Component {
         <Main>
           <Header2 title='Share your Destination Experience'/>
           <Share />
-          <TripCard onAddTripCard={this.shareTripUrl.bind(this)}/>
+          {/* <TripCard onAddTripCard={this.shareTripUrl.bind(this)}/> */}
         </Main>
         <Footer />
       </div>
