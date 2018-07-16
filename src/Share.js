@@ -22,17 +22,20 @@ class Share extends Component {
         });
     }
 
-    handleUpload() {
-        this.props.onAddTripCard(this.state.url);
+    handleUpload(e) {
+        e.preventDefault();
+        this.props.onAddTripCard(this.state.urlPath, this.state.destination);
         this.setState({
-            url: ''
+            urlPath: '',
+            destination: ''
         });
     }
 
     render() {
         return(
             <div className='Share-container'>
-                <form className='Share-form' >
+                <form className='Share-form'
+                      onSubmit={this.handleUpload.bind(this)} >
                     <input className='Share-destination'
                             type='text'
                             placeholder='Where did you visit?'
@@ -44,8 +47,7 @@ class Share extends Component {
                          onChange={this.handleUrlPath.bind(this)}
                          value={this.state.urlPath}>
                     </input>
-                    <button className='Share-btn'
-                            onClick={this.handleUpload.bind(this)} >
+                    <button className='Share-btn' >
                         Share Now!
                     </button>
                 </form>

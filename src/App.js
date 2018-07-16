@@ -30,13 +30,16 @@ class App extends Component {
         'https://loremflickr.com/300/300/stonemountain',
       ],
 
-      shareTrip: []
+      shareTrip: {
+        urlPath: '',
+        destination: ''
+      }
     }
   };
 
-  shareTripUrl (url) {
+  shareTripUrl (url, destination) {
     this.setState({
-      shareTrip: [...this.state.shareTrip, url]
+      shareTrip: {...this.state.shareTrip, urlPath:url, destination:destination}
     });
   }
 
@@ -49,8 +52,8 @@ class App extends Component {
         </Main>
         <Main>
           <Header2 title='Share your Destination Experience'/>
-          <Share />
-          <TripCard onAddTripCard={this.shareTripUrl.bind(this)}/>
+          <Share onAddTripCard={this.shareTripUrl.bind(this)} />
+          <TripCard urlPath={this.state.shareTrip.urlPath} destination={this.state.shareTrip.destination}/>
         </Main>
         <Footer />
       </div>
