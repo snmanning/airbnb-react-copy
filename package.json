@@ -12,9 +12,7 @@
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
-
-  "homepage": "https://snmanning.github.io/airbnb-react-copy/", 
-
+  "homepage": "https://snmanning.github.io/airbnb-react-copy/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -22,5 +20,8 @@
     "eject": "react-scripts eject",
     "predeploy": "rm -rf build && npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }
